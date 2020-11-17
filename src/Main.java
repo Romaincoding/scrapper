@@ -45,13 +45,13 @@ public class Main {
 
 
         Actions seriesOfActions = builder.moveToElement(field).click().sendKeys(field,"la grotte aux dragons");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         seriesOfActions.perform();
        String result = text + " " + text1 + " " + text2 +" " + text3 + " " + text4 + " " + text5;
         System.out.println(result);
 
         // Close the browser window
-        //driver.close();
+        driver.close();
 
     }
 
